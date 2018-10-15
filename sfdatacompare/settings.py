@@ -127,7 +127,7 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Redis settings
-redis_url = urlparse.urlparse(os.environ.get('REDIS_URL'))
+redis_url = urllib.parse.urlparse(os.environ.get('REDIS_URL'))
 CACHES = {
     "default": {
          "BACKEND": "redis_cache.RedisCache",
