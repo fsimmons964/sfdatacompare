@@ -17,5 +17,5 @@ redis==2.10.6
 requests==2.7.0
 static==1.1.1
 static3==0.6.1
-suds==0.4
+suds-jurko
 whitenoise==2.0.4
