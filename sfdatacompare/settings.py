@@ -25,10 +25,10 @@ PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = '%5p4$z7)d$urxka+rn%*v2k(+nf-rle*l2swxm+6jqbcetgqrs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ADMINS = (
-    ('Ben Edwards', 'ben@benedwards.co.nz'),
+    ('Frank Simmons', 'frank.simmons@monotype.com'),
 )
 
 ALLOWED_HOSTS = ['*']
@@ -102,11 +102,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
-
-POSTMARK_API_KEY     = os.environ.get('POSTMARK_API_KEY')
-POSTMARK_SENDER      = 'ben@benedwards.co.nz'
-POSTMARK_TEST_MODE   = False
-POSTMARK_TRACK_OPENS = False
 
 # SALESFORCE KEYS
 SALESFORCE_CONSUMER_KEY = os.environ['SALESFORCE_CONSUMER_KEY']
