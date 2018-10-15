@@ -117,14 +117,9 @@ STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
-#STATICFILES_DIRS = (
- #   os.path.join(PROJECT_PATH, 'static'),
-#)
-
-# Simplified static file serving.
-# https://warehouse.python.org/project/whitenoise/
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_PATH, 'static'),
+)
 
 # Redis settings
 redis_url = urllib.parse.urlparse(os.environ.get('REDIS_URL'))
