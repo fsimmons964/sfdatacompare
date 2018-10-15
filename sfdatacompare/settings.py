@@ -22,7 +22,7 @@ PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%5p4$z7)d$urxka+rn%*v2k(+nf-rle*l2swxm+6jqbcetgqrs'
+SECRET_KEY = 'THANKSTOM!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -106,7 +106,7 @@ USE_TZ = True
 # SALESFORCE KEYS
 SALESFORCE_CONSUMER_KEY = os.environ['SALESFORCE_CONSUMER_KEY']
 SALESFORCE_CONSUMER_SECRET = os.environ['SALESFORCE_CONSUMER_SECRET']
-SALESFORCE_REDIRECT_URI = 'https://sfdatacompare.herokuapp.com/oauth-response'
+SALESFORCE_REDIRECT_URI = 'https://fsdatacompareapp.herokuapp.com/oauth-response'
 SALESFORCE_API_VERSION = int(os.environ['SALESFORCE_API_VERSION'])
 
 # Static files (CSS, JavaScript, Images)
