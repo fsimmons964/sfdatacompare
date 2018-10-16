@@ -121,6 +121,8 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_PATH, 'static'),
 )
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # Redis settings
 redis_url = urllib.parse.urlparse(os.environ.get('REDIS_URL'))
 CACHES = {
